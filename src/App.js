@@ -1,15 +1,15 @@
 import React from "react";
 import "./App.css";
+// import "src/Components/PostsPage.js";
+// import PostsPage from "src/Components/PostsPage.js";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
+  <div className="App">
+    {/* <PostsPage /> */}
     </div>
   );
-}
+ 
+};
 
 export default App;
