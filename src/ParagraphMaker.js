@@ -3,7 +3,7 @@ import React from "react";
 const ParagraphMaker = (props) => {
 	return (
 		<div>
-            <p className='ofTheDayP'>props.data</p>
+			<p className="ofTheDayP">{props.data}</p>
 		</div>
 	);
 };
