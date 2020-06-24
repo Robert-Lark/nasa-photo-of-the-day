@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import "./Page";
 import Page from "./Page.js";
 import Axios from "axios";
 
 const PostsPage = () => {
-	const [image, setImage] = useState([]);
+	const [image, setImage] = useState({});
 
 	useEffect(() => {
 		Axios.get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY`)
@@ -20,7 +19,7 @@ const PostsPage = () => {
 
 	return (
 		<div className="postPage">
-			<Page page={image} />
+			<Page image={image} />
 		</div>
 	);
 };

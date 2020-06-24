@@ -3,7 +3,7 @@ import React from "react";
 const ImageHolder = (props) => {
 	return (
 		<div>
-			<img src={props.url} alt="" className="ofTheDayImg" />
+			<img src={props.src} alt="default" className="ofTheDayImg" />
 		</div>
 	);
 };
